@@ -2,11 +2,20 @@ public class Vehicle {
     /* This is a base class for all the vehicles */
 
     /* Data members or Attributes */
-    private String id;
-    private String name;
-    private int noOfTyre;
-    private String color;
-    private double milesPerLitre;
+    protected String id;
+    protected String name;
+    protected int noOfTyre;
+    protected String color;
+    protected double milesPerLitre;
+    protected static int noOfDriver;
+
+    /* Static initializer */
+    static {
+        // This block run only at the time of this class file loaded.
+        // And this is the 1st block which start the execution.
+        noOfDriver = 1;
+        System.out.println("\n\nnoOfDriver is set to "+noOfDriver+".\n\n");
+    }
 
     /* Constructors */
 
@@ -52,12 +61,14 @@ public class Vehicle {
     public void getMilesPerLitre(){
         System.out.println("id: "+this.milesPerLitre);
     }
-    public void GetVehicle(){
+    public void getVehicle(){
         System.out.println("************ "+this.id+" **************");
         System.out.println("Name: "+this.name);
         System.out.println("No of Tyres: "+this.noOfTyre);
         System.out.println("Color: "+this.color);
         System.out.println("Miles per Litre: "+this.milesPerLitre);
+        System.out.println("No of Driver: "+noOfDriver);
+        System.out.println("============ "+this.id+" ==============");
     }
 
     // setters
@@ -69,4 +80,7 @@ public class Vehicle {
         this.color = color;
     }
 
+    public static void setNoOfDriver(int driversCount){
+        noOfDriver = driversCount;
+    }
 }
