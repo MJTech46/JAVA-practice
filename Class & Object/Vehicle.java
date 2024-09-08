@@ -14,7 +14,7 @@ public class Vehicle {
         // This block run only at the time of this class file loaded.
         // And this is the 1st block which start the execution.
         noOfDriver = 1;
-        System.out.println("\n\nnoOfDriver is set to "+noOfDriver+".\n\n");
+        System.out.println("\n\nnoOfDriver is set to "+noOfDriver+" using the static block.\n\n");
     }
 
     /* Constructors */
@@ -68,7 +68,7 @@ public class Vehicle {
         System.out.println("Color: "+this.color);
         System.out.println("Miles per Litre: "+this.milesPerLitre);
         System.out.println("No of Driver: "+noOfDriver);
-        System.out.println("============ "+this.id+" ==============");
+        System.out.println("************ "+this.id+" ************");
     }
 
     // setters

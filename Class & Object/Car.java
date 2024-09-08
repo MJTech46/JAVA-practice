@@ -25,7 +25,7 @@ public class Car extends Vehicle {
 
     // using super()
     public Car(String id, String name, int noOfTyre, String color, double milesPerLitre){
-        super(id, name, noOfTyre, color, milesPerLitre);
+        super(id, name, noOfTyre, color, milesPerLitre); // this calls the parent constructor
 
     }
 }
