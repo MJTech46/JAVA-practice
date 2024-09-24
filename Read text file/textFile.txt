@@ -1,0 +1,4 @@
+This is a text file for the java file reading example.
+I hope this will work......
+
+Hello from the text file :)
